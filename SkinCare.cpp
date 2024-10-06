@@ -24,7 +24,7 @@ void pilihSubMenuFacialWash() {
             cout << "Pilihan tidak valid." << endl;
 
         }
-    } while (pilihan != 2);
+    } while (pilihan != 3);
 }
 
 void pilihSubMenuFacialWash1() {
@@ -41,12 +41,15 @@ void pilihSubMenuFacialWash1() {
         switch (pilihan) {
             case 1 :
             cout << "Recommended : Cetaphil cleanser gel" << endl;
-            exit (0);
+            break;
             case 2 :
             cout << "Recommended : Skintific facial foam" << endl;
-            exit (0);
+            break;
+            default :
+            cout << "Pilihan tidak valid." << endl;
+
         }
-    } while (pilihan != 2);
+    } while (pilihan != 3);
 }
 
 void pilihSubMenuFacialWash2() {
@@ -62,12 +65,10 @@ void pilihSubMenuFacialWash2() {
         switch (pilihan) {
             case 1 :
             cout << "Recommended : Cerave cleanser gel" << endl;
-            exit (0);
+            break;
             case 2 :
             cout << "Recommended : Acnes facial foam" << endl;
-            exit (0);
-            
-
+            break;
         }
     } while (pilihan != 3);
 }
@@ -87,16 +88,16 @@ void pilihSubMenuMoisturizer() {
         switch (pilihan) {
             case 1:
             cout << "recommended : Cosrx aloe vera" << endl;
-            exit (0);
+            break;
             case 2:
             cout << "recommended : Glad to glow moisturizer" << endl;
-            exit (0);
+            break;
             case 3:
             cout << "recommended : Skin1004 madagascar" << endl;
-            exit (0);
+            break;
             case 4:
             cout << "Kembali ke Pilihan Skincare" << endl << endl;
-            exit (0);
+            break;
         }
 
     } while (pilihan != 4);
@@ -117,16 +118,16 @@ void pilihSubMenuMoisturizer1() {
         switch (pilihan) {
             case 1:
             cout << "recommended : Skintific moisturizer" << endl;
-            exit (0);
+            break;
             case 2:
             cout << "recommended : Dearme Beauty" << endl;
-            exit (0);
+            break;
             case 3:
             cout << "recommended : La roche posay" << endl;
-            exit (0);
+            break;
             case 4:
             cout << "Kembali ke Pilihan Skincare" << endl << endl;
-            exit (0);
+            break;
         }
 
     } while (pilihan != 4);
@@ -147,16 +148,16 @@ void pilihSubMenuMoisturizer2() {
         switch (pilihan) {
             case 1:
             cout << "recommended : Dorskin moisturizer" << endl;
-            exit (0);
+            break;
             case 2:
             cout << "recommended : Azarine moisturizer" << endl;
-            exit (0);
+            break;
             case 3:
             cout << "recommended : Illiyon moisturizer" << endl;
-            exit (0);
+            break;
             case 4:
             cout << "Kembali ke Pilihan Skincare" << endl << endl;
-            exit (0);
+            break;
         }
 
     } while (pilihan != 4);
@@ -178,16 +179,17 @@ void pilihSubMenuSunscreen() {
         switch (pilihan) {
             case 1:
             cout << "recommended : Labore sunscreen" << endl;
-            exit (0);
+            break;
             case 2:
             cout << "recommended : Somethinc Holyshield" << endl;
-            exit (0);
+            break;
             case 3:
             cout << "recommended : Facetology sunscreen" << endl;
-            exit (0);
+            break;
             case 4:
-            cout << "Kembali ke Pilihan Skincare" << endl << endl;
-            exit (0);
+            cout << "Kembali ke Pilihan Skincare" << endl;
+            break; 
+
         }
 
     } while (pilihan != 4);
@@ -208,16 +210,16 @@ void pilihSubMenuSunscreen1() {
         switch (pilihan) {
             case 1:
             cout << "recommended : Dearme Beauty Sunscreen" << endl;
-            exit (0);
+            break;
             case 2:
             cout << "recommended : Biore Uv" << endl;
-            exit (0);
+            break;
             case 3:
             cout << "recommended : Skinaqua sunscreen" << endl;
-            exit (0);
+            break;
             case 4:
-            cout << "Kembali ke Pilihan Skincare" << endl << endl;
-            exit (0);
+            cout << "Kembali ke Pilihan Skincare" << endl;
+            break;
         }
 
     } while (pilihan != 4);
@@ -238,16 +240,16 @@ void pilihSubMenuSunscreen2() {
         switch (pilihan) {
             case 1:
             cout << "recommended : Skintific sunscreen" << endl;
-            exit (0);
+            break;
             case 2:
             cout << "recommended : Inisfree sunscsreen" << endl;
-            exit (0);
+            break;
             case 3:
             cout << "recommended : Implora sunscreen" << endl;
-            exit (0);
+            break;
             case 4:
-            cout << "Kembali ke Pilihan Skincare" << endl << endl;
-            exit (0);
+            cout << "Kembali ke Pilihan Skincare" << endl;
+            break;
         }
 
     } while (pilihan != 4);
@@ -267,8 +269,10 @@ void pilihSkincare() {
         switch (pilihan) {
             case 1:
                 pilihSubMenuFacialWash();
+                break;
             case 2:
                 pilihSubMenuMoisturizer();
+                break;
             case 3:
                 pilihSubMenuSunscreen();
                 break;
@@ -280,6 +284,7 @@ void pilihSkincare() {
                 break;
             default:
                 cout << "Pilihan tidak valid." << endl;
+                break;
         }
     } while (pilihan != 4);
 }
@@ -298,8 +303,10 @@ void pilihSkincare1() {
         switch (pilihan) {
             case 1:
                 pilihSubMenuFacialWash1();
+                break;
             case 2:
                 pilihSubMenuMoisturizer1();
+                break;
             case 3:
                 pilihSubMenuSunscreen1();
                 break;
@@ -311,6 +318,7 @@ void pilihSkincare1() {
                 break;
             default:
                 cout << "Pilihan tidak valid." << endl;
+                break;
         }
     } while (pilihan != 4);
 }
@@ -329,8 +337,10 @@ void pilihSkincare2() {
         switch (pilihan) {
             case 1:
                 pilihSubMenuFacialWash2();
+                break;
             case 2:
                 pilihSubMenuMoisturizer2();
+                break;
             case 3:
                 pilihSubMenuSunscreen2();
                 break;
@@ -342,6 +352,7 @@ void pilihSkincare2() {
                 break;
             default:
                 cout << "Pilihan tidak valid." << endl;
+                break;
         }
     } while (pilihan != 4);
 }
@@ -391,6 +402,7 @@ void pilihGender() {
                 break;
             default:
                 cout << "Pilihan tidak valid."<< endl;
+                break;
         }
     } while (pilihan != 3);
 }
